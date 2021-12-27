@@ -1,7 +1,5 @@
 export function getStrapiURL(path) {
-  return `${
-    process.env.GATSBY_STRAPI_URL || 'http://localhost:1337'
-  }${path}`
+  return `${process.env.GATSBY_STRAPI_URL || "http://localhost:1337"}${path}`
 }
 
 // Helper to make GET requests to Strapi
@@ -9,7 +7,7 @@ export function getStrapiURL(path) {
 export async function fetchAPI(path, options = {}) {
   const defaultOptions = {
     headers: {
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
   }
   const mergedOptions = {

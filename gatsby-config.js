@@ -8,7 +8,9 @@ module.exports = {
   },
   siteMetadata: {
     title: `Strapi+Gatsby Corporate Starter`,
-    siteUrl: `${process.env.GATSBY_STRAPI_URL || "http://localhost:1337"}`,
+    siteUrl: `${
+      process.env.GATSBY_STRAPI_URL || "https://strapi-4jqq.onrender.com"
+    }`,
     description: `A Strapi+Gatsby corporate starter`,
     author: `Strapi`,
     languages: { defaultLocale: "en", locales: ["en", "fr"] },
