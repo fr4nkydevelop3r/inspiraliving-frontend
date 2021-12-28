@@ -13,6 +13,8 @@ const BlogPost = ({ data, pageContext }) => {
   } = data.strapiArticle
   const global = data.strapiGlobal
 
+  console.log(global)
+
   const metadata = {
     metaDescription: "This is our Blog",
     metaTitle: "Blog/InspiraLiving",

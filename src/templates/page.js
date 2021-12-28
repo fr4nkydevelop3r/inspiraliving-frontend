@@ -8,6 +8,8 @@ const DynamicPage = ({ data, pageContext }) => {
   const { contentSections, metadata, localizations } = data.strapiPage
   const global = data.strapiGlobal
 
+  console.log(global)
+
   return (
     <>
       <SEO seo={metadata} global={global} />
@@ -44,10 +46,7 @@ export const query = graphql`
         alternativeText
         localFile {
           childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
@@ -82,10 +81,7 @@ export const query = graphql`
       logo {
         localFile {
           childImageSharp {
-            gatsbyImageData(
-              placeholder: BLURRED
-              formats: [AUTO, WEBP, AVIF]
-            )
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
       }
