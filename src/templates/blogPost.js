@@ -35,7 +35,7 @@ const BlogPost = ({ data, pageContext }) => {
 export default BlogPost
 
 export const query = graphql`
-  fragment GlobalData on StrapiGlobal {
+  fragment GlobalDataStrapi on StrapiGlobal {
     favicon {
       localFile {
         publicURL
@@ -58,7 +58,7 @@ export const query = graphql`
         alternativeText
         localFile {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
           }
         }
       }
@@ -93,7 +93,7 @@ export const query = graphql`
       logo {
         localFile {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+            gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP])
           }
         }
       }
