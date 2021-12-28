@@ -5,6 +5,9 @@ require("dotenv").config({
 module.exports = {
   flags: {
     DEV_SSR: false,
+    FAST_DEV: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
   },
   siteMetadata: {
     title: `Strapi+Gatsby Corporate Starter`,
